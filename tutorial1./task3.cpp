@@ -14,29 +14,30 @@ int main() {
 
     cin >> guess;
 
-    while (guess < 1 || guess > n) { 
-        cout << "outta range mf " <<"0 > n <" << n << ": "; 
-        cin >> guess; 
-        }
-
-    if (guess>0 and n<guess){
-
+    while (guess> -1 and n+1 >guess) {  
         while (guess != secret) {
             cout << "Wrong! Guess again: ";
-            if (guess>secret)
-                cout<<"lower"<<endl;
-            else if(guess<secret)
-                cout<<"higher"<<endl;
+            if (guess>secret){
+                cout<<"lower"<<endl;}
+            else if(guess<secret){
+                cout<<"higher"<<endl;}
         guessnum++;
         cin >> guess; }
+
+    cout << "Correct!\n";
+    cout<<guessnum<<" guesses \n";
+    main();
+    return 0;
+    }
+
+    cout << "outta range mf ; " <<"0 > n <" << n << ": \n"; 
+    cin >> guess; 
+
+    
 
   
 
     }
 
 
-    cout << "Correct!\n";
-    cout<<guessnum<<" guesses \n";
-    main();
-    return 0;
-}
+    
