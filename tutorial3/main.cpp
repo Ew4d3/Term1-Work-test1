@@ -16,6 +16,7 @@ clang++ -std=c++17 main.cpp stats.cpp -o stats
 
 vector<double> read_vector(istream &in) {
     vector<double> v;
+	
     double x;
 
     while (in >> x) {
