@@ -20,7 +20,6 @@ it to lists. Do this both as an iterator loop and as a ranged forloop.
 2. Write a function
 void scale(double s, list<double> &vs)
 that modifies vs, multiplying each element by s. Again, do this both as an iterator l
-\
 
 
 */
