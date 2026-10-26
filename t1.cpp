@@ -14,7 +14,7 @@ int main()
 
 /*
  
-1. Modify the averagefunction from last week to use iterators instead of indices, and then adapt
+1. Modify the average function from last week to use iterators instead of indices, and then adapt
 it to lists. Do this both as an iterator loop and as a ranged forloop.
 
 2. Write a function
