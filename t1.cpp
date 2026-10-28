@@ -24,6 +24,7 @@ that modifies vs, multiplying each element by s. Again, do this both as an itera
 
 
 // &is a reference, so the function can modify the original lisst
+// const is a promise not to modify the list, so the function can be called with a const list
 // 
 
 */
