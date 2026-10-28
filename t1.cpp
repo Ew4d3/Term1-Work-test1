@@ -22,4 +22,8 @@ void scale(double s, list<double> &vs)
 that modifies vs, multiplying each element by s. Again, do this both as an iterator l
 
 
+
+// &is a reference, so the function can modify the original lisst
+// 
+
 */

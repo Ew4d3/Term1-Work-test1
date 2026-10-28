@@ -1,5 +1,6 @@
 
 #include "stats.h"
+#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <stdexcept>
@@ -8,7 +9,7 @@ using namespace std;
 
 // The median of the values in a vector
 // Requires: v.size() > 0
-double median(vector<double> v) {
+double median(vector<double> v) {//copy of v is made to sort it without modifying the original vector
     const auto n = v.size();
 
     if (n == 0)
@@ -26,7 +27,7 @@ double median(vector<double> v) {
 
 // The average of the values in a vector
 // Requires: v.size() > 0
-double average(const vector<double>& v) {
+double average(const vector<double>& v) { // use a reference to avoid copying the vector
     const auto n = v.size();
 
     if (n == 0)
@@ -41,7 +42,7 @@ double average(const vector<double>& v) {
 }
 
 // Average score excluding the first and last values
-double score(const vector<double> v) {
+double score(const vector<double> v) { //marked as const indicates v doesnt chnage, even though being passes as reference
     if (v.size() < 3)
         throw domain_error("score requires at least three values");
 
@@ -81,5 +82,17 @@ double min(const vector<double> v) {
     }
 
     return smallest;
+}
+
+
+
+void write_vector(ostream &out, const vector<double> &v) {
+const auto n = v.size();
+        cout << "vector:";
+using vec_size = vector<double>::size_type;
+for (vec_size i = 0; i < n; ++i)
+    cout << ' ' << v[i];
+cout<< '\n';
+
 }
 
