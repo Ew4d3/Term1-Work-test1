@@ -22,6 +22,12 @@ int main() {
         }
     }
 
+
+    never:
+        std::cout << "This line will never be executed." << std::endl;
+        goto never;
+
+    
     
     return 0;
 
